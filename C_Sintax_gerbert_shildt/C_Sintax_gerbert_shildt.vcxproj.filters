@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C_Sintax_gerbert_shildt.cpp">
+    <ClCompile Include="C_Sintax_gerbert_shildt.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
