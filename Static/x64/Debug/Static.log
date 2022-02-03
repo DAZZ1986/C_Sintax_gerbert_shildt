@@ -1,0 +1,3 @@
+﻿  Source.c
+D:\CODE\C\repos\C_Sintax_gerbert_shildt\Static\Source.c(31,25): warning C4013: 'StaticLocalTest' undefined; assuming extern returning int
+  Static.vcxproj -> D:\CODE\C\repos\C_Sintax_gerbert_shildt\x64\Debug\Static.exe
