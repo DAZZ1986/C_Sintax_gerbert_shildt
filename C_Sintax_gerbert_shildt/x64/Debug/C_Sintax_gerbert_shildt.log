@@ -1,1 +1,4 @@
-﻿  C_Sintax_gerbert_shildt.vcxproj -> D:\CODE\С\repos\C_Sintax_gerbert_shildt\x64\Debug\C_Sintax_gerbert_shildt.exe
+﻿  C_Sintax_gerbert_shildt.c
+D:\CODE\С\repos\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt.c(24,15): warning C4101: 'k': unreferenced local variable
+D:\CODE\С\repos\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt.c(24,12): warning C4101: 'j': unreferenced local variable
+  C_Sintax_gerbert_shildt.vcxproj -> D:\CODE\С\repos\C_Sintax_gerbert_shildt\x64\Debug\C_Sintax_gerbert_shildt.exe
