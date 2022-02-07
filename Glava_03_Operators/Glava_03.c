@@ -7,6 +7,7 @@ int main(void)
 {
     char* locale = setlocale(LC_ALL, "");
 
+    // http://paulfertser.info/polnyy_spravochnik_po_c_gerbert_shildt/03/03.htm
     printf("///////// √лава 03. ќператоры\n");
     /*
     ќператор Ч это часть программы, котора€ может быть выполнена отдельно[1]. Ёто означает, что оператор определ€ет 
