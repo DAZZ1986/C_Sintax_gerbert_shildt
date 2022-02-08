@@ -1,11 +1,11 @@
 ﻿  C_Sintax_gerbert_shildt.c
-D:\CODE\C\repos\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt.c(1514,12): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
-D:\CODE\C\repos\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt.c(1514,12): warning C4313: 'printf': '%d' in format string conflicts with argument 1 of type 'int *'
-D:\CODE\C\repos\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt.c(1581,12): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
-D:\CODE\C\repos\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt.c(1581,12): message : consider using '%zd' in the format string
-D:\CODE\C\repos\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt.c(1582,12): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
-D:\CODE\C\repos\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt.c(1582,12): message : consider using '%zd' in the format string
-D:\CODE\C\repos\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt.c(53,1): warning C4305: 'initializing': truncation from 'double' to 'float'
-D:\CODE\C\repos\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt.c(132,15): warning C4101: 'k': unreferenced local variable
-D:\CODE\C\repos\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt.c(132,12): warning C4101: 'j': unreferenced local variable
+D:\CODE\C\repos\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt.c(1521,12): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
+D:\CODE\C\repos\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt.c(1521,12): warning C4313: 'printf': '%d' in format string conflicts with argument 1 of type 'int *'
+D:\CODE\C\repos\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt.c(1588,12): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+D:\CODE\C\repos\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt.c(1588,12): message : consider using '%zd' in the format string
+D:\CODE\C\repos\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt.c(1589,12): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+D:\CODE\C\repos\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt.c(1589,12): message : consider using '%zd' in the format string
+D:\CODE\C\repos\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt.c(60,1): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\CODE\C\repos\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt.c(139,15): warning C4101: 'k': unreferenced local variable
+D:\CODE\C\repos\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt\C_Sintax_gerbert_shildt.c(139,12): warning C4101: 'j': unreferenced local variable
   C_Sintax_gerbert_shildt.vcxproj -> D:\CODE\C\repos\C_Sintax_gerbert_shildt\x64\Debug\C_Sintax_gerbert_shildt.exe

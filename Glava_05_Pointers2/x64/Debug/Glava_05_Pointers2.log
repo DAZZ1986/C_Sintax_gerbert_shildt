@@ -1,0 +1,3 @@
+﻿D:\Program Files (x86)\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(510,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Glava_05_Pointers2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Glava_05_Pointers.c
+  Glava_05_Pointers2.vcxproj -> D:\CODE\C\repos\C_Sintax_gerbert_shildt\x64\Debug\Glava_05_Pointers.exe

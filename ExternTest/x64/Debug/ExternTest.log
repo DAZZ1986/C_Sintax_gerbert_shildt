@@ -1,2 +1,5 @@
 ﻿  Main.c
-  ExternTest.vcxproj -> D:\CODE\С\repos\C_Sintax_gerbert_shildt\x64\Debug\ExternTest.exe
+  Player.c
+  Generating Code...
+D:\CODE\C\repos\C_Sintax_gerbert_shildt\ExternTest\Player.c(12): warning C4716: 'g_ShowBalance': must return a value
+  ExternTest.vcxproj -> D:\CODE\C\repos\C_Sintax_gerbert_shildt\x64\Debug\ExternTest.exe

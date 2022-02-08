@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Glava_04_Arrays_and_Strings.cpp">
+    <ClCompile Include="Glava_04_Arrays_and_Strings.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
