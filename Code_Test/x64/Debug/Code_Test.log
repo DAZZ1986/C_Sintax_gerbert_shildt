@@ -1,0 +1,4 @@
+﻿  Tests.c
+D:\CODE\C\repos\C_Sintax_gerbert_shildt\Code_Test\Tests.c(21,13): warning C4013: 'gets' undefined; assuming extern returning int
+D:\CODE\C\repos\C_Sintax_gerbert_shildt\Code_Test\Tests.c(26,20): warning C4013: 'strcmp' undefined; assuming extern returning int
+  Code_Test.vcxproj -> D:\CODE\C\repos\C_Sintax_gerbert_shildt\x64\Debug\Code_Test.exe
