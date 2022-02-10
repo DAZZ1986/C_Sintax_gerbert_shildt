@@ -1131,8 +1131,6 @@ int main(void)
 
 
 
-
-
     // http://paulfertser.info/polnyy_spravochnik_po_c_gerbert_shildt/06/0612.htm
     printf("\n\n\n/////////// Ключевое слово inline\n");
     /*
@@ -1145,21 +1143,6 @@ int main(void)
     */    
 
 
-
-
-
-
-
-
-
-
-
-
-
-    printf("\n\n\n/////////// 000\n");
-    /*
-
-    */
 
     return 0;
 }
