@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Glava_05_Pointers", "Glava_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Code_Test", "Code_Test\Code_Test.vcxproj", "{188DE263-D48E-4710-A0E4-127373E17D28}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Glava_06_Functions", "Glava_06_Functions\Glava_06_Functions.vcxproj", "{5B91B885-3C76-4421-8703-7D9B2006769A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{188DE263-D48E-4710-A0E4-127373E17D28}.Release|x64.Build.0 = Release|x64
 		{188DE263-D48E-4710-A0E4-127373E17D28}.Release|x86.ActiveCfg = Release|Win32
 		{188DE263-D48E-4710-A0E4-127373E17D28}.Release|x86.Build.0 = Release|Win32
+		{5B91B885-3C76-4421-8703-7D9B2006769A}.Debug|x64.ActiveCfg = Debug|x64
+		{5B91B885-3C76-4421-8703-7D9B2006769A}.Debug|x64.Build.0 = Debug|x64
+		{5B91B885-3C76-4421-8703-7D9B2006769A}.Debug|x86.ActiveCfg = Debug|Win32
+		{5B91B885-3C76-4421-8703-7D9B2006769A}.Debug|x86.Build.0 = Debug|Win32
+		{5B91B885-3C76-4421-8703-7D9B2006769A}.Release|x64.ActiveCfg = Release|x64
+		{5B91B885-3C76-4421-8703-7D9B2006769A}.Release|x64.Build.0 = Release|x64
+		{5B91B885-3C76-4421-8703-7D9B2006769A}.Release|x86.ActiveCfg = Release|Win32
+		{5B91B885-3C76-4421-8703-7D9B2006769A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
