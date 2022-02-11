@@ -16,8 +16,15 @@ char* match(char c, char* s);  //прототип
 ///////////Функция типа void
 void print_vertical(char* str);  //прототип
 
-
-
+///////////Структуры
+struct Soccer
+{
+    char name[80];
+    char lastName[80];
+    int age;
+    int skill;
+    char teamName[80];
+};
 
 
 int main(int argc, char* argv[])
@@ -115,7 +122,39 @@ int main(int argc, char* argv[])
 
 
     ///////////Функция типа void
-    if (argc > 1) print_vertical(argv[1]);
+    //if (argc > 1) print_vertical(argv[1]);
+
+
+
+
+
+
+
+    printf("\n\n\n/////////// Структуры\n");
+    /*
+    struct Soccer   //объявление структуры в шапке файла (тут просто для наглядности)
+    {
+        char name[80];
+        char lastName[80];
+        int age;
+        int skill;
+        char teamName[80];
+    };
+   */
+    struct Soccer player; //определение структуры (тоесть создали переменную тип которой является структура Soccer)
+
+    strcpy_s(player.name, sizeof(player.name), "Di maria"); //инициализация члена/поля name, в структуре player.
+    printf("Name: %s \n", player.name);
+
+    player.age = 33; //инициализация члена/поля age, в структуре player.
+    printf("Age: %d \n", player.age);
+    
+
+    printf("\n\n\n/////////// Массивы структур\n");
+    struct Soccer playerList[100];  //тут создали массив структур, тоесть 100 структур с наборами переменных    
+    playerList[2].age = 20;         //инициализировали поле age в структуре под номером 3
+    printf("Player 3 age: %d\n", playerList[2].age);
+
 
 
 
@@ -123,6 +162,13 @@ int main(int argc, char* argv[])
 
     return 0;
 }    
+
+
+
+
+
+
+
 
 
 

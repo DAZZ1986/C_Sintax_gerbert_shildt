@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Glava_07_Structure.cpp">
+    <ClCompile Include="Glava_07_Structure.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
