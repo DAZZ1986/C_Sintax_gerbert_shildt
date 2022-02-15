@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <conio.h>
 
 
 //Аргументы функции
@@ -46,7 +47,7 @@ char* dic[][40] = {     //список слов и их значений
 
 //Препроцессор
 #define ABS(a)  (a) < 0 ? -(a) : (a)
-#define MAX 10
+#define MAX 100
 
 #define US 0 
 #define ENGLAND 1
@@ -57,7 +58,7 @@ char* dic[][40] = {     //список слов и их значений
 
 
 
-#line 100000                  //установить счетчик строк
+//#line 100000                  //установить счетчик строк
 
 #define mkstr(s)  # s
 #define concat(a, b)  a ## b
@@ -237,12 +238,39 @@ int main(int argc, char* argv[])
 
     
     printf("\n\n\n/////////// Чтение и запись строк\n");
+    
+    /*
+    //int getchar(void);    int putchar(int c);
+    printf("Введите какой-нибудь текст (для завершения работы введите точку).\n");
+    char sss;
+    do {
+
+        sss = getchar();
+        putchar(sss);
+
+    } while (sss != '.');
+    */
+
+    /*
+    //int getch(void);    int getche(void);
+    char ch;
+    printf("Введите какой-нибудь текст (для завершения работы введите точку).\n");
+        do {
+            ch = _getch();
+
+            if (islower(ch)) ch = toupper(ch);
+            else ch = tolower(ch);
+
+            putchar(ch);
+        } while (ch != '.');
+    */
+
     /*
     char str[80];
     gets(str);
+    puts(str);
     printf("Длина в символах равна %d", strlen(str));
     */
-
 
 
     /*
@@ -260,11 +288,9 @@ int main(int argc, char* argv[])
     do {
         puts("\nВведите слово: ");
         scanf_s("%s", word);
-
         p = (char**)dic;
 
-        //поиск слова в словаре и вывод его значения
-        do {
+        do { //поиск слова в словаре и вывод его значения
             if (!strcmp(*p, word)) {
                 puts("Значение:");
                 puts(*(p + 1));
@@ -300,16 +326,24 @@ int main(int argc, char* argv[])
     int sample;
     printf("\nВывод адреса переменной sample: %p \n", &sample);
     */
-    /*
+    /*  тут ОШИБКА
     int count;
     printf("this%n is a test\n", &count);
     printf("%d", count);
     */
     /*
-    printf("%x %#x\n", 10, 10); //если вы поставите # непосредственно перед x или X, то шестнадцатеричное число будет выведено с префиксом 0x
-    printf("%*.*f", 10, 4, 1234.34); //минимальная ширина поля будет равна 10 символам, точность — 4, а отображаться будет число 123.3. 
+    printf("%10.5f\n", 123.1234567); //тут первая цифра означает что ширина поля вывода будет не менее 10 символов, а вторая
+                                     //цифра определяет сколько цифр будет выведено после точки.
+    printf("%10.15s\n", "Это простая проверка."); //диапазон (минимум 10, максимум 15 символов на вывод).
+    printf("%10.8d\n", 1000); //тут первая цифра ознгачает сколько вообще символов будет занимать строка, а вторая цифра говорит
+                              //сколько цифр выводить, и если число меньше этих цифр, то перед числом они добьются нулями.
     */
-
+    /*
+    printf("%x %#x\n", 10, 10); //если вы поставите # непосредственно перед x или X, то шестнадцатеричное число будет выведено
+                                //с префиксом 0x.
+    printf("%*.*f", 10, 4, 1234.34); //минимальная ширина поля будет равна 10 символам, точность — 4, а отображение кол-во
+                                     //чисел после точки.(тоесть точность числа).   
+    */
 
 
 
@@ -319,8 +353,12 @@ int main(int argc, char* argv[])
     scanf_s("%o%x", &i, &j);
     printf("%o %x", i, j);
     */
-
-    /*
+    /* тут ОШИБКА ЖЕНЯ - во второй символ щаписывает какуюто "М"
+    char a, b, c;
+    scanf_s("%c%c%c", &a, &b, &c);
+    printf("%c%c%c", a, b, c);
+    */
+    /* тут ОШИБКА ЖЕНЯ
     char name[50];
     int age = 0;
     printf("Введите name: ");
@@ -328,6 +366,28 @@ int main(int argc, char* argv[])
     printf("Введите age: ");
     scanf_s("%d", &age);
     printf("Вы ввели - name: %s, age:  \n", name);
+    */
+    /* тут ОШИБКА ЖЕНЯ
+    char str[80];
+    printf("Введите строку: ");
+    scanf_s("%s", str);
+    printf("Вот Ваша строка: %s", str);
+    */
+    
+
+    ///////////Использование набора сканируемых символов
+    /* тут ОШИБКА, ЖЕНЯ
+    int i;
+    char str[80], str2[80];
+
+    scanf_s("%d%[abcdefg]%s", &i, str, str2);
+    printf("%d %s %s", i, str, str2);
+    */
+
+    /* ОШИБКА ЖЕНЯ
+    int x, y;
+    scanf_s("%d% c%d", &x, &y);
+    printf("%d% c%d", x, y);
     */
 
 
@@ -337,9 +397,9 @@ int main(int argc, char* argv[])
 
     printf("\n\n\n/////////// Директива #define\n");
 
-    /*
-    #define ABS(a)  (a) < 0 ? -(a) : (a)
-    */
+/*
+#define ABS(a)  (a) < 0 ? -(a) : (a)
+*/
     printf("Модули чисел -1 и 1 равны соответственно %d и %d\n", ABS(-1), ABS(1));
 
 
@@ -347,17 +407,24 @@ int main(int argc, char* argv[])
 /*    
 #define MAX 100
 */
+/*
 #if MAX>99
     printf("Компилирует для массива, размер которого больше 99.\n");
 #else
     printf("Компилирует для небольшого массива.\n");
 #endif 
+*/
 
 
+/*
+#define US 0 
+#define ENGLAND 1
+#define FRANCE 2
 
+#define ACTIVE_COUNTRY US
+*/
 
-
-    /*
+/*
 #if ACTIVE_COUNTRY == US
     char currency[] = "dollar";
 #elif ACTIVE_COUNTRY == ENGLAND
@@ -365,10 +432,10 @@ int main(int argc, char* argv[])
 #else
     char currency[] = "franc";
 #endif
+*/
 
 
-
-
+/*
 #ifdef TED
     printf("Привет, Тед\n");
 #else
@@ -391,8 +458,7 @@ int main(int argc, char* argv[])
 
 
     printf("Строка: %d\n", __LINE__); //строка 102
-
-    */
+*/
 
 
 
@@ -406,9 +472,10 @@ int main(int argc, char* argv[])
 /*
 #define concat(a, b)  a ## b
 */
+    /*
     int xy = 1020;
     printf("\n %d \n", concat(x, y));
-
+    */
 
 
 
