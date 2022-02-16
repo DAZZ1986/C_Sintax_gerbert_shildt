@@ -5,6 +5,12 @@
 #include <conio.h>
 
 
+//Глобальные переменные
+int count;  //глобальная переменная count
+void func1(void);
+void func2(void);
+
+
 //Аргументы функции
 int Sqr(int x);  //прототип функции
 void Swap(int* x, int* y);
@@ -70,6 +76,24 @@ char* dic[][40] = {     //список слов и их значений
 int main(int argc, char* argv[])
 {
     char* locale = setlocale(LC_ALL, "");
+
+    //alex durimar!
+
+    printf("\n\n\n/////////// Глава 02. Выражения\n");
+    /*
+    printf("\n\n\n/////////// Глобальные переменные\n");
+    count = 100;   //глобальная переменная count
+    func1();
+    */
+    /*
+    int x = 5 / 2;
+    prinf("%d \n", 5 / 2);
+    */
+
+
+
+
+
 
     printf("///////// Глава 05. Указатели\n");
 
@@ -490,7 +514,22 @@ int main(int argc, char* argv[])
 
 
 
+//Глобальные переменные
+void func1(void)
+{
+    int temp;
+    temp = count;
+    func2();
+    printf("count глобальная %d \n", count); // напечатает 100
+}
 
+void func2(void)
+{
+    int count;  //происходит обращение к локальной переменной count, а не к глобальной
+    count = 1;
+    printf("count локальная %d \n", count); // напечатает 1
+
+}
 
 
 
