@@ -1,4 +1,4 @@
-#include <stdio.h>        // подключаем заголовочный файл stdio.h
+#include <stdio.h>
 #include <locale.h>
 
 

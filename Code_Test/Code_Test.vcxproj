@@ -19,7 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="file2.c" />
+    <ClCompile Include="file3.c" />
     <ClCompile Include="Tests.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="file3.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

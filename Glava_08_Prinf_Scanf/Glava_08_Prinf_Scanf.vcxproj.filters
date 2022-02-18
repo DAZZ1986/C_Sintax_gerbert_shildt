@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Glava_08_Prinf_Scanf.c">
+    <ClCompile Include="Glava_08_Prinf_scanf_s.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

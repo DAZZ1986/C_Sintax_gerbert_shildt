@@ -354,7 +354,7 @@ int main(void)
 
         do {
             printf("Введите значение: ");
-            scanf("%d", &value);
+            scanf_s("%d", &value);
 
             if (value != 0) push(value);
             else printf("значение на вершине равно %d\n", pop());
