@@ -7,14 +7,16 @@ using namespace std;
 int main()
 {
      //Расширение знака
-
+    /*
     signed char c = -10; //от -128 до 127    в 1 байте(тк char), -1 это 0xFF и при перекладывании в 4 байтовый int, происходит
     unsigned int i = c; //от 0 до 65535     расширение знака - 0xFFFF FFFF. Тоесть он -1 превращает в большой -1.
     signed int i2 = c; //от –32768 до 32767  
+    */
     /*
     Тоесть он -1 превращает в большой -1, а мы то принимаем в беззнаковый. Тоесть нам кажется что если мы кладем 0xFF, 
     то там будет вот так 0x0000 00FF, а на самом деле, будет так 0xFFFF FFFF (тоесть большой -1)! Тоесть протянет знак!
     */
+    /*
     wcout << dec << c << endl;   //вывод -1
     wcout << dec << i << endl;   //вывод 429 496 295, интерпритирует тк у него нет такого значения, тк он unsigned
     wcout << dec << i2 << endl;  //вывод -1
@@ -24,9 +26,9 @@ int main()
     wcout << bitset<sizeof(c) * 8>(c) << endl;
     wcout << bitset<sizeof(i) * 8>(i) << endl;  //тут интерпритирует
     wcout << bitset<sizeof(i2) * 8>(i2) << endl;
-
+    */
     wcout << "-------------------------------" << endl;
-
+    /*
     //а с беззнаковым unsigned char такого не проихойдет, тк не нужно будет протягивать знак и он просто переложит 255.
     unsigned char h = -1; //от 0 до 255
     unsigned int k = h;   //от 0 до 65535
@@ -34,7 +36,7 @@ int main()
     wcout << dec << k << endl; //вывод 255
     wcout << hex << h << endl; //вывод 0x000000FF
     wcout << hex << k << endl; //вывод 0x000000FF
-
+    */
     wcout << "-------------------------------" << endl;
     /*
     Изначально проблемы со знаковостью типа char, когда он имеет спецификатор signed. Это приводит к трудностям
@@ -51,7 +53,7 @@ int main()
     тоесть 255 вне зависимости от знака целого числа.
     */
     
-
+    /*
     wcout << "----------------My tests---------------" << endl;
     wcout << "----signed char---to---unsigned int----" << endl;
     signed char g1 = -56;  //1 байт: от -128 до 127
@@ -68,7 +70,7 @@ int main()
     wcout << dec << g3 << endl; //тут все хорошо тк кладем signed в signed 
     wcout << hex << g3 << endl; 
     wcout << bitset<sizeof(g3) * 8>(g3) << endl;
-
+    */
 
 
     wcout << "-------------------------------" << endl;
@@ -98,6 +100,62 @@ int main()
 
 
 
+
+
+
+
+    printf("\nBubble sort on C++\n");
+    int arr[10] = { 1,3,7,5,4,9,8,0,2,6 };
+    bool flag = true;
+    int arrWide = 9;
+    int globalCount = 1;
+
+    printf("Before: ");
+    for (int i = 0; i < arrWide; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+
+    //пузырьковая сортировка
+    for (int j = 0; j < globalCount; j++)
+    {
+        //проверка флага
+        for (int i = 0; i < arrWide; i++)
+        {
+            if (arr[i] > arr[i + 1])
+            {
+                flag = false;
+                globalCount += 1;
+                break;
+            }
+        }
+
+        if (globalCount-1 == j)
+        {
+            break;
+        }
+
+        //перенос чисел
+        for (int i = 0; i < arrWide; i++)
+        {
+            if (arr[i] > arr[i + 1])
+            {
+                int temp;
+                temp = arr[i];
+                arr[i] = arr[i + 1];
+                arr[i + 1] = temp;
+            }
+        }
+    }
+
+    printf("\nAfter:  ");
+    for (int i = 0; i < arrWide; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+
+
+    printf("\n\n\n");
 
 }
 

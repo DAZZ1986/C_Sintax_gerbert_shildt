@@ -97,6 +97,13 @@ char* dic[][40] = {     //список слов и их значений
 
 
 
+//Пузырьковая сортировка
+int bubbleSort(int* a, int b);
+
+
+
+
+
 int main(int argc, char* argv[])
 {
     char* locale = setlocale(LC_ALL, "");
@@ -205,6 +212,7 @@ int main(int argc, char* argv[])
     printf("%d число в квадрате %d", i, isqrd);
     */
 
+    /*
     int a, b;
 
     printf("Введите два числа: ");
@@ -212,7 +220,7 @@ int main(int argc, char* argv[])
 
     if (b) printf("%d\n", a / b);
     else printf("Делить на нуль нельзя.\n");
-
+    */
 
 
 
@@ -628,10 +636,52 @@ int main(int argc, char* argv[])
 
 
 
+    printf("\n\n\n");
+
+
+
+
+    //Алгоритмы
+    // 
+    //Пузырьковая сортировка
+    printf("\nBubble sort on C\n");
+    //Возврат в тот же массив через указатель
+    int arrBefore[10] = {3,1,7,5,4,9,8,0,2,6};
+
+    printf("Before \n");
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%d \n", arrBefore[i]);
+    }
+
+    bubbleSort(arrBefore, 10);
+
+
+    //Возврат в новый массив
+    //int arrAfter[10];
+
+    /*
+    arrAfter[10] = bubbleSort(arrBefore, 10);
+
+    printf("After \n");
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%d \n", arrAfter[i]);
+    }
+    */
+
 
     printf("\n\n\n");
     return 0;
 }    
+
+
+
+
+
+
+
+
 
 
 
