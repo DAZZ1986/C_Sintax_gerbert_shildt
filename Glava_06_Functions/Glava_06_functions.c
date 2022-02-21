@@ -30,7 +30,7 @@ int main(void)
     */
 
 
-
+    
 
 
     // http://paulfertser.info/polnyy_spravochnik_po_c_gerbert_shildt/06/0601.htm
